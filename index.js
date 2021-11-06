@@ -5,22 +5,22 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get('/add', (req, res) => {
+app.post('/add', (req, res) => {
     const { a, b } = req.body;
     const result = add(a, b);
     res.json({ result });
 })
-app.get('/sub', (req, res) => {
+app.post('/sub', (req, res) => {
     const { a, b } = req.body;
     const result = sub(a, b);
     res.json({ result });
 })
-app.get('/mul', (req, res) => {
+app.post('/mul', (req, res) => {
     const { a, b } = req.body;
     const result = mul(a, b);
     res.json({ result });
 })
-app.get('/div', (req, res) => {
+app.post('/div', (req, res) => {
     const { a, b } = req.body;
     const result = div(a, b);
     res.json({ result });
