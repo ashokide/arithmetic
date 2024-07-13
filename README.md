@@ -1,7 +1,8 @@
-### Arithmetic API
+### Arithmetic API 
 
-API Link
-* https://arithmetic-sg60.onrender.com
+Tech        : Nodejs
+
+API Link    : https://arithmetic-sg60.onrender.com
 
 Endpoints
 * /add
